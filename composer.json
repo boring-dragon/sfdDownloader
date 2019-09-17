@@ -1,5 +1,5 @@
 {
-    "name": "jinas/downloader",
+    "name": "jinas/sfddownloader",
     "description": "Simple class to download files passed as a url",
     "license": "MIT",
     "authors": [
