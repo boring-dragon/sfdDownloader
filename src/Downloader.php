@@ -6,15 +6,16 @@ class Downloader
 {
     private $FileNameToStore;
 
+
     /**
-     * __construct
+     * downloadfile
      *
      * @param  mixed $url
      * @param  mixed $path
      *
      * @return void
      */
-    public function __construct($url, $path)
+    public function downloadfile($url, $path)
     {
         $this->download($zipFile = $this->makeFileName($path, $url), $url);
     }
