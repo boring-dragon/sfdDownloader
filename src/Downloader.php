@@ -39,7 +39,7 @@ class Downloader
 
         $extension = $this->getFileExtensions($url);
 
-        $FileNameWithExt = 'file_'.time().$extension;
+        $FileNameWithExt = 'file_'.time().'.'.$extension;
 
         $this->setFileNameToStore($FileNameWithExt);
 
