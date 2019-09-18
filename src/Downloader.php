@@ -58,7 +58,7 @@ class Downloader
      *
      * @return void
      */
-    public function getFileExtensions($url)
+    private function getFileExtensions($url)
     {
 
         $ext = pathinfo($url, PATHINFO_EXTENSION);
@@ -88,13 +88,25 @@ class Downloader
         file_put_contents($fileName, $file);
     }
 
+    /**
+     * getFileToStore
+     *
+     * @return void
+     */
     public function getFileToStore()
     {
         return $this->FileNameToStore;
          
     }
 
-    public function setFileNameToStore($FileNameToStore)
+    /**
+     * setFileNameToStore
+     *
+     * @param  mixed $FileNameToStore
+     *
+     * @return void
+     */
+    private function setFileNameToStore($FileNameToStore)
     {
         $this->FileNameToStore = $FileNameToStore;
     }
